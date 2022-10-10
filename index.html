@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard with tailwindcss</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b58d9b0d5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="grid grid-cols-12 grid-rows-12">
+      <div class="bg-violet-50 col-start-1 col-end-3 row-span-3">
+        <h1
+          class="text-2xl font-mono font-extrabold text-violet-600 antialiased pl-6 bor"
+        >
+          <i class="fa-solid fa-table-columns pt-4"></i> DASHBOARD
+        </h1>
+
+        <ul class="mt-4 w-full p-3">
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-house"></i> Home
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-user"></i> Profile
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-message"></i> Messages
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-clock"></i> History
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-folder-open"></i> Tasks
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-comments"></i> Community
+          </li>
+        </ul>
+        <ul class="pt-4 mt-4 space-y-2  p-3">
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-gear"></i> Settings
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-circle-question"></i> Support
+          </li>
+          <li class="hover:bg-violet-600 hover:text-violet-50 p-3 rounded">
+            <i class="fa-solid fa-lock"></i> Privacy
+          </li>
+        </ul>
+      </div>
+      <div
+        class="bg-violet-600 col-start-3 col-span-10 pt-4 text-white row-start-1 row-span-1"
+      >
+        <div class="grid grid-cols-5">
+          <div
+            class="col-start-1 col-span-3 flex align-middle place-items-center pl-6"
+          >
+            <div class="w-full">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search.."
+                class="bg-slate-200 py-2 px-3 border border-violet-700 rounded-full w-5/6"
+              />
+            </div>
+          </div>
+          <div
+            class="col-start-4 col-end-6 flex justify-end place-items-center pr-6"
+          >
+            <div class="">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="flex pl-2">
+              <img
+                src="/runsten.jpg"
+                class="shadow rounded-full h-12 align-middle border border-violet-700 sepia"
+              />
+            </div>
+            <div class="pl-2">
+              <p class="text-l font-bold">Carl Hasselblad</p>
+            </div>
+          </div>
+          <div class="col-start-1 col-span-3 flex place-items-center pl-6 h-32">
+            <div class="flex">
+              <img
+                src="/runsten.jpg"
+                class="shadow rounded-full h-20 align-middle border border-violet-700 sepia"
+              />
+            </div>
+            <div class="pl-6">
+              <p class="text-sm font-bold">Hi there,</p>
+              <p class="text-xl font-bold font-sans">
+                Carl Hasselblad (@Lysmask)
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-start-4 col-end-6 flex space-x-7 place-items-center justify-end pr-6"
+          >
+            <button
+              class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-3 border border-violet-700 rounded w-20 h-10"
+            >
+              New
+            </button>
+            <button
+              class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-3 border border-violet-700 rounded w-20 h-10"
+            >
+              Upload
+            </button>
+            <button
+              class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-3 border border-violet-700 rounded w-20 h-10"
+            >
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-start-3 col-span-10 row-start-2 p-6 flex">
+        <div class="left w-3/4">
+          <h2 class="text-3xl font-mono font-sans font-bold text-zinc-800 mb-2">
+            My projects
+          </h2>
+
+          <div class="grid grid-cols-2 grid-rows-3 gap-5">
+        
+            <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+              <p class="text-xl font-mono font-sans font-bold text-zinc-800">
+                Super Cool Project
+              </p>
+              <p class="text-sm font-mono font-sans w-3/4 text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+                cia ut facilis, nulla et quisquam quos perferendis id accus amus
+                dolorum dolore ipsa minus doloremque ducimus ipsum blan itiis
+                reprehenderit expedita, optio explicabo!
+              </p>
+
+              <div class="text-end space-x-1.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+              <p class="text-xl font-mono font-sans font-bold text-zinc-800">
+                Super Cool Project
+              </p>
+              <p class="text-sm font-mono font-sans w-3/4 text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+                cia ut facilis, nulla et quisquam quos perferendis id accus amus
+                dolorum dolore ipsa minus doloremque ducimus ipsum blan itiis
+                reprehenderit expedita, optio explicabo!
+              </p>
+
+              <div class="text-end space-x-1.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+              <p class="text-xl font-mono font-sans font-bold text-zinc-800">
+                Super Cool Project
+              </p>
+              <p class="text-sm font-mono font-sans w-3/4 text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+                cia ut facilis, nulla et quisquam quos perferendis id accus amus
+                dolorum dolore ipsa minus doloremque ducimus ipsum blan itiis
+                reprehenderit expedita, optio explicabo!
+              </p>
+
+              <div class="text-end space-x-1.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+              <p class="text-xl font-mono font-sans font-bold text-zinc-800">
+                Super Cool Project
+              </p>
+              <p class="text-sm font-mono font-sans w-3/4 text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+                cia ut facilis, nulla et quisquam quos perferendis id accus amus
+                dolorum dolore ipsa minus doloremque ducimus ipsum blan itiis
+                reprehenderit expedita, optio explicabo!
+              </p>
+
+              <div class="text-end space-x-1.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+              <p class="text-xl font-mono font-sans font-bold text-zinc-800">
+                Super Cool Project
+              </p>
+              <p class="text-sm font-mono font-sans w-3/4 text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+                cia ut facilis, nulla et quisquam quos perferendis id accus amus
+                dolorum dolore ipsa minus doloremque ducimus ipsum blan itiis
+                reprehenderit expedita, optio explicabo!
+              </p>
+
+              <div class="text-end space-x-1.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+              <p class="text-xl font-mono font-sans font-bold text-zinc-800">
+                Super Cool Project
+              </p>
+              <p class="text-sm font-mono font-sans w-3/4 text-zinc-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+                cia ut facilis, nulla et quisquam quos perferendis id accus amus
+                dolorum dolore ipsa minus doloremque ducimus ipsum blan itiis
+                reprehenderit expedita, optio explicabo!
+              </p>
+
+              <div class="text-end space-x-1.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <div class="right  w-1/4 px-5">
+          <h2 class="text-3xl font-mono font-sans font-bold text-zinc-800 mb-2">
+            Announcements
+          </h2>
+
+          <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+            <p class="text-l font-mono font-sans font-bold text-zinc-800">
+              Site maintenance
+            </p>
+            <p class="text-sm font-mono font-sans w-93 text-zinc-500 border-b-2 border-zinc-300 pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+              cia ut facilis, nulla et quisquam quos perferendis
+            </p>
+
+            <p class="text-l font-mono font-sans font-bold text-zinc-800 pt-3">
+              Site maintenance
+            </p>
+            <p class="text-sm font-mono font-sans w-93 text-zinc-500 pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <h2 class="text-3xl font-mono font-sans font-bold text-zinc-800 my-2">
+            Trending
+          </h2>
+
+          <div class="bg-slate-50 rounded p-3 border border-zinc-300">
+            <p class="text-l font-mono font-sans font-bold text-zinc-800">
+              Site maintenance
+            </p>
+            <p class="text-sm font-mono font-sans w-93 text-zinc-500 border-b-2 border-zinc-300 pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Offi
+              cia ut facilis, nulla et quisquam quos perferendis
+            </p>
+
+            <p class="text-l font-mono font-sans font-bold text-zinc-800 pt-3">
+              Site maintenance
+            </p>
+            <p class="text-sm font-mono font-sans w-93 text-zinc-500 pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
